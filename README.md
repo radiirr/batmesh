@@ -72,6 +72,10 @@ and for ./gwlupdater.sh
 > [!NOTE]
 > when you nat traffic into the mesh network you can nat traffic out to other networks, ie.: to internet, or other externet's, or just simple route between them, or redistribute other ospf, bgp, isis, etc...
 
+> ./init.sh 
+
+Which initialize batctl and ip link which can "manually" bring up the interface, set parameters, also do iptables postrouting and echo settings. 
+
 > ./gwlupdater.sh 
 
 Which utilize vnstat which sample interface bandwidth's, add to crontab and if batctl set to gw_mode "server" this automatically set with batctl the remaining bandwidth values which propagated through the mesh in the ogm's. 
