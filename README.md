@@ -184,4 +184,4 @@ and, ~ chmod +x ./them to run
 - frr version 10.2.1
 - [batman-adv: 2022.2]
 - batctl debian-2023.0-1 [batman-adv: 2024.2]
-- batctl 2024.4 [batman-adv: 2024.2]
+- batctl 2024.4 [batman-adv: 2024.4]
