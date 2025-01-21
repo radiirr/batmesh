@@ -25,7 +25,7 @@ echo "[#]  [ settings ] - [ 2 ] - wireguard peer config act as client with stati
 read -p "[#]* [ settings ] - [ 0 | 1 | 2 ]: " wg_config_response
 
 if [[ "$wg_config_response" =~ ^[0]$ ]]; then
-echo "[#]> [create] wireguard interface [ config ] required for [ init ] with listen port [set]"
+echo "[#]> [create] wireguard interface [ config ] required for [ init ] option [ 0 ] with listener port [set]"
 read -p "[#]  [ config ] [set] path [ $default_wg_config_file ]: " wg_config_file
 wg_config_file=${wg_config_file:-$default_wg_config_file}
 
@@ -61,7 +61,7 @@ fi
 fi
 
 if [[ "$wg_config_response" =~ ^[1]$ ]]; then
-echo "[#]> [create] wireguard interface [ config ] required for [ init ] with listen port [set]"
+echo "[#]> [create] wireguard interface [ config ] required for [ init ] option [ 1 ] with random port [set]"
 read -p "[#]  [ config ] [set] path [ $default_wg_config_file ]: " wg_config_file
 wg_config_file=${wg_config_file:-$default_wg_config_file}
 
@@ -97,7 +97,7 @@ fi
 fi
 
 if [[ "$wg_config_response" =~ ^[2]$ ]]; then
-echo "[#]> [create] wireguard interface [ config ] required for [ init ] without listen port [set]"
+echo "[#]> [create] wireguard interface [ config ] required for [ init ] option [ 2 ] with static port [set]"
 read -p "[#]  [ config ] [set] path [ $default_wg_config_file ]: " wg_config_file
 wg_config_file=${wg_config_file:-$default_wg_config_file}
 
